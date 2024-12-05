@@ -292,6 +292,8 @@ Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobr
 
 - Remoção da view padrão `welcome.blade.php`, uma vez que se trata de uma API.
 
+- Instalação do `Laravel Sanctum`: `php artisan install:api`
+
 
 
 
