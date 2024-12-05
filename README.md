@@ -288,10 +288,9 @@ Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobr
 
 - Por segurança e boa prática, deixar o arquivo .env apenas no repositório local, removendo a sua referência no .gitignore.
 
+- Remoção do arquivo `database.sqlile` e das referências ao sqlite no arquivo .env, uma vez que usarei o banco de dados grátis MySQL no Heroku.
 
-
-
-
+- Remoção da view padrão `welcome.blade.php`, uma vez que se trata de uma API.
 
 
 
