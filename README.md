@@ -286,6 +286,10 @@ Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobr
 
 - Criar a estrutura inicial do projeto em Laravel: `composer create-project laravel/laravel Dictionary-API`
 
+- Por segurança e boa prática, deixar o arquivo .env apenas no repositório local, removendo a sua referência no .gitignore.
+
+
+
 
 
 
