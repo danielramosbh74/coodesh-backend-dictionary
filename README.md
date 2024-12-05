@@ -278,3 +278,27 @@ O cache pode ser feito a guardar todo o corpo das respostas ou para guardar o re
 ## Suporte
 
 Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma. 
+
+
+## Documentação
+
+- Após ler todas as instruções, atualizar este README.md, documentar, na medida em que for progredindo.
+
+- Criar a estrutura inicial do projeto em Laravel: `composer create-project laravel/laravel Dictionary-API`
+
+
+
+
+
+
+
+
+
+## Apresentação
+
+### Link do repositório:
+https://github.com/danielramosbh74/coodesh-backend-dictionary
+
+### Link da apresentação:
+https://
+
