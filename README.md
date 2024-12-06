@@ -294,6 +294,11 @@ Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobr
 
 - Instalação do `Laravel Sanctum`: `php artisan install:api`
 
+- Configuração inicial (localhost) do banco de dados mysql `DictionaryAPI`, que foi criado usando o PHPMyAdmin ANTES de alterar as configurações no .env.
+Este banco de dados armazenará as autenticações.
+
+
+
 
 
 
