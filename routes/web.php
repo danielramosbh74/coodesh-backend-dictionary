@@ -3,5 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    abort (403, 'Unauthorized access');
+    return response()->json(
+        [
+        'message' => 'Fullstack Challenge 🏅 - Dictionary'
+        ],
+        200
+    );
 });
