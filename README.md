@@ -297,7 +297,8 @@ Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobr
 - Configuração inicial (localhost) do banco de dados mysql `DictionaryAPI`, que foi criado usando o PHPMyAdmin ANTES de alterar as configurações no .env.
 Este banco de dados armazenará as autenticações.
 
-
+- Neste ponto pausei o desenvolvimento local, abri uma conta no Heroku e estudei como publicar uma aplicação PHP lá.
+Farei mais um _commit_ neste ponto, logo após as "migrations" locais, e então publicarei a aplicação como está neste momento, incompleta, mas funcionando.
 
 
 
