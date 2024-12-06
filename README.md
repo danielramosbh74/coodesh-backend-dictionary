@@ -311,5 +311,5 @@ Farei mais um _commit_ neste ponto, logo após as "migrations" locais, e então 
 https://github.com/danielramosbh74/coodesh-backend-dictionary
 
 ### Link da apresentação:
-https://
+https://coodesh-backend-dictionary-0ad92ea0ed90.herokuapp.com/
 
