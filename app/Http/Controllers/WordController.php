@@ -21,7 +21,24 @@ class WordController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validate the request
+
+        $request->validate([
+            'word' => 'required',
+            'favorite' => 'required',
+            'access_history' => 'required',
+        ]);
+
+        // Add a new word in database
+
+        $word = Word::create($request->all());
+
+        return response()->json(
+            [
+                'message' => 'Word created successfully',
+                'data' => $word,
+            ],200
+        );
     }
 
     /**
