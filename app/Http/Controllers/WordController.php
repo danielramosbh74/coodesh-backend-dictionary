@@ -46,7 +46,16 @@ class WordController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // Show word details
+        $word = Word::find($id);
+
+        // return a response
+        if ($word){
+            return response()->json($word, 200);
+        } else {
+            return response()->json(['message' => 'Word not found'], 404);
+        }
+    
     }
 
     /**
@@ -54,7 +63,27 @@ class WordController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        // Validate the request
+
+        $request->validate([
+            'word' => 'required',
+            'favorite' => 'required',
+            'access_history' => 'required',
+        ]);
+
+        // update word data in database
+        $word = Word::find($id);
+        if ($word) {
+            $word -> update($request->all());
+            return response()->json(
+                [
+                    'message' => 'Word update successfully',
+                    'data' => $word,
+                ],200);
+        } else {
+            return response()->json(['message' => 'Word not found'], 404);
+
+        }
     }
 
     /**
@@ -62,6 +91,17 @@ class WordController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+           // delete word
+           $word = Word::find($id);
+           if ($word) {
+               $word -> delete();
+               return response()->json(
+                   [
+                       'message' => 'Word deleted successfully'
+                   ],200);
+           } else {
+               return response()->json(['message' => 'Word not found'], 404);
+   
+           }
     }
 }
