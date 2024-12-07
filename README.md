@@ -1,5 +1,7 @@
 # Back-end Challenge - Dictionary
 
+*OBS: A Documentação e o link da publicação do projeto estão no final deste README.md*
+
 ## Introdução
 
 Este é um teste para que possamos ver as suas habilidades como Back-end Developer.
@@ -295,12 +297,14 @@ Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobr
 - Instalação do `Laravel Sanctum`: `php artisan install:api`
 
 - Configuração inicial (localhost) do banco de dados mysql `DictionaryAPI`, que foi criado usando o PHPMyAdmin ANTES de alterar as configurações no .env.
-Este banco de dados armazenará as autenticações.
+Este banco de dados armazenará localmente as informações relativas aos `users` (autenticações) e às `words` ("CRUD").
 
 - Neste ponto pausei o desenvolvimento local, abri uma conta no Heroku e estudei como publicar uma aplicação PHP lá.
 Farei mais um _commit_ neste ponto, logo após as "migrations" locais, e então publicarei a aplicação como está neste momento, incompleta, mas funcionando.
 
+- Baixar a lista de palavras e importá-las para o banco de dados local para ter dados para mostrar quando for criar as rota do "CRUD".
 
+- 
 
 
 
