@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\WordController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -28,3 +29,6 @@ Route::get('/status', function () {
 // });
 
 Route::apiResource('words', WordController::class);
+
+// auth routes
+Route::post('/login', [AuthController::class, 'login']);

@@ -320,7 +320,7 @@ Por exemplo:
 2. Nem todas as rotas foram implantadas, mas é possível fazer um "CRUD" com as "words"
 3. Baixei a lista de palavras, analisei os scripts que estão no repositório indicado, mas não consegui importar a "lista de palavras" para o banco de dados.
 
--- Mesmo fugindo da estrtura padrão do Laravel, criei a pasta "challenge_images" neste repositório para colocar alguns prints (que serão inseridos neste README.md apenas) e facilitar esta documentação.
+-- Mesmo fugindo da estrutura padrão do Laravel, criei a pasta "challenge_images" neste repositório para colocar alguns prints (que serão inseridos neste README.md apenas) e facilitar esta documentação.
 
 
 ## Apresentação
