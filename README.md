@@ -1,4 +1,5 @@
 # Back-end Challenge - Dictionary
+>  This is a challenge by [Coodesh](https://coodesh.com/)
 
 *OBS: A Documentação e o link da publicação do projeto estão no final deste README.md*
 
@@ -281,6 +282,7 @@ O cache pode ser feito a guardar todo o corpo das respostas ou para guardar o re
 
 Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma. 
 
+-------------------------------------------------------------------------------------------
 
 ## Documentação
 
@@ -288,7 +290,7 @@ Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobr
 
 - Criar a estrutura inicial do projeto em Laravel: `composer create-project laravel/laravel Dictionary-API`
 
-- Por segurança e boa prática, deixar o arquivo .env apenas no repositório local, removendo a sua referência no .gitignore.
+- Por segurança e boa prática, deixar o arquivo .env apenas no repositório local, INCLUINDO a sua referência no .gitignore.
 
 - Remoção do arquivo `database.sqlile` e das referências ao sqlite no arquivo .env, uma vez que usarei o banco de dados grátis MySQL no Heroku.
 
@@ -302,11 +304,23 @@ Este banco de dados armazenará localmente as informações relativas aos `users
 - Neste ponto pausei o desenvolvimento local, abri uma conta no Heroku e estudei como publicar uma aplicação PHP lá.
 Farei mais um _commit_ neste ponto, logo após as "migrations" locais, e então publicarei a aplicação como está neste momento, incompleta, mas funcionando.
 
-- Baixar a lista de palavras e importá-las para o banco de dados local para ter dados para mostrar quando for criar as rota do "CRUD".
+- Baixar a lista de palavras e importá-las para o banco de dados local para ter dados para mostrar quando for criar as rotas do "CRUD".
 
-- 
+- Hoje, dia 08/12/2024, às 07:44, faltando 2 dias e 7 horas para entregar o projeto (completando-o ou não, pretendo entregar *o melhor que eu conseguir*, dentro do prazo, com alguma margem), o status do que foi feito é resumidamente (mais detalhes podem ser vistos nos commits, analisando o código e testando-o localmente)
 
+-- Como estou buscando um emprego, priorizei publicar o app (mesmo ciente de que ele ainda está incompleto) do que apenas fazê-lo funcionar localmente e deixar o código aqui no Github, pois a publicação de um app tambḿ envolve vários detalhes que acho importantes além do desenvolvimento local.
+<img src="/challenge_images/1o deploy para o Heroku além do app exemplo.png">
+-- Exportei e importei as tabelas dos bancos de dados local e remoto, mas mesmo tendo importado-as para o BD no Heroku, o app publicado não está funcionando como deveria, como está rodando localmente.
+<img src="/challenge_images/MySQL Workbenk acessando o Jawsdb remoto do Heroku.png">
+-- Mesmo localmente, o app está funcionando apenas com uma parte do que foi pedido. 
+Por exemplo: 
+1. O App lista as "words", mas na rota http://localhost:8000/api/words, não na rota sugerida: /entries/en
+<!-- <![alt](https://)> -->
+<img src="/challenge_images/Captura de tela de 2024-12-08 07-50-56.png">
+2. Nem todas as rotas foram implantadas, mas é possível fazer um "CRUD" com as "words"
+3. Baixei a lista de palavras, analisei os scripts que estão no repositório indicado, mas não consegui importar a "lista de palavras" para o banco de dados.
 
+-- Mesmo fugindo da estrtura padrão do Laravel, criei a pasta "challenge_images" neste repositório para colocar alguns prints (que serão inseridos neste README.md apenas) e facilitar esta documentação.
 
 
 ## Apresentação
